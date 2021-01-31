@@ -1,0 +1,39 @@
+@import 'base/variables'
+
+a
+    &:hover
+        color: $pressed-color
+
+.container
+    max-width: 1140px
+    margin: 0 auto
+
+@media ( max-width: 1200px)
+    .container
+        width: 980px
+
+@media ( max-width: 991px)
+    .container
+        width: 950px
+
+@media (max-width: 768px)
+    .container
+        width: 97%
+
+@media (prefers-color-scheme: dark)
+    body
+        background-color: #1c1c1e
+        color: #fefefe       
+
+*
+    font-family: 'Roboto'
+    scroll-behavior: smooth
+    flex-flow: wrap
+
+@import 'blocks/promo'
+@import "blocks/header"
+@import 'blocks/buttons'
+@import 'blocks/titles'
+@import 'blocks/advantages'
+@import 'blocks/features'
+@import 'blocks/agent'
