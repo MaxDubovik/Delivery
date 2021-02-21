@@ -1,0 +1,73 @@
+.feed
+    padding-bottom: 65px
+    &__wrapper
+       
+
+    &__item
+        display: flex !important
+        flex-direction: column
+        justify-content: center
+        align-items: center
+        margin-top: 31px
+
+    &__header
+        font-size: 18px
+        text-align: center
+        color: #3a3a3a
+        font-weight: 700
+        margin-top: 19px
+
+
+    &__descr
+        font-size: 14px
+        text-align: center
+        color: #3a3a3a
+        font-weight: 300
+        width: 60%
+
+    .slick
+        
+        &-prev
+            left: 40%     
+            z-index: 1
+        &-next
+           right: 40% 
+
+        &-next, &-prev
+            color: $main-color
+            height: 47px
+            font-size: 40px
+            background: none
+            border: none
+            position: absolute
+            bottom: 50%
+            transform: translateY(-50%)
+            &:hover
+                color: $pressed-color
+
+@media (max-width: 1200px)
+    .feed
+        .slick
+            &-prev
+                left: 38%
+            &-next
+                right: 38%
+
+@media (max-width: 575px)
+    .feed
+        &__descr
+            width: 100%
+        .slick
+            &-prev
+                left: 18%
+                bottom: 60%
+            &-next
+                right: 18%
+                bottom: 60%
+    
+@media (prefers-color-scheme: dark)
+    .feed
+        &__header
+            color: #fefefe
+        &__descr
+            color: #fefefe
